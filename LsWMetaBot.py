@@ -4,7 +4,8 @@ updater = Updater(token='TELEGRAM-BOT-TOKEN')
 dispatcher = updater.dispatcher
 
 def meta(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="Warning. System discovered a meta question. Is there a concrete question on the topic ? (Y/n):")
+    bot.send_message(chat_id=update.message.chat_id, 
+        text="Warning. System discovered a meta question.\nIs there a concrete question on the topic ? (Y/n):\n(Was ist eine Metafrage: http://metafrage.de/)")
 def help(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="LsW Metafragen-Bot. https://github.com/DeatPlayer/lsw-meta-bot")
 
