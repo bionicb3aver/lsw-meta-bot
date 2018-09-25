@@ -6,7 +6,7 @@ import re
 updater = Updater(token='TELEGRAM-BOT-TOKEN')
 dispatcher = updater.dispatcher
 
-regex_pattern = "/(würde|ist|kennt|kann|darf|hat).+(jemand|jemande[m|n]|dich|euch|zufällig|mir).+(mit.+[a-zA-Z](.+auskennt\?|.+aus\?|.+aus[,| ]+der.+kann\?|helfen\?)|fragen\?|jemand helfen\?|(mir|uns) bei [a-zA-Z ]+ helfen\?)/gmi"
+regex_pattern = "(würde|ist|kennt|kann|darf|hat).+(jemand|jemande[m|n]|dich|euch|zufällig|mir).+(mit.+[a-zA-Z](.+auskennt\?|.+aus\?|.+aus[,| ]+der.+kann\?|helfen\?)|fragen\?|jemand helfen\?|(mir|uns) bei [a-zA-Z ]+ helfen\?)"
 meta_text = "Warning. System discovered a meta question.\nIs there a concrete question on the topic ? (Y/n):\n(Was ist eine Metafrage: http://metafrage.de/)"
 help_text = "LsW Metafragen-Bot. https://github.com/DeatPlayer/lsw-meta-bot"
 
