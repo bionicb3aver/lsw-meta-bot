@@ -25,7 +25,7 @@ def metadetector(bot, update):
     pattern = re.compile(regex_pattern, re.IGNORECASE)
     detected = pattern.search(message)
     if detected:
-        bot.send_message(chat_id=update.message.chat_id, text=meta_text)
+        bot.send_message(chat_id=update.message.chat_id, text=meta_text, reply_to_message_id=update.message.message_id)
     localtime = time.asctime( time.localtime(time.time()) )
     sys.stdout.write(localtime + " [INFO] Command: autodetect - Chat-ID: " + update.message.chat_id + " => " + update.message.text)
 
